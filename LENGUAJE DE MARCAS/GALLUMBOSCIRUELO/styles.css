@@ -1,0 +1,254 @@
+/* =========================================
+   1. RESET Y BASES
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Espaciado general para todas las secciones */
+section {
+    padding: 80px 0; /* Más espacio arriba y abajo */
+    margin-bottom: 40px;
+}
+
+/* =========================================
+   2. HEADER Y NAVEGACIÓN
+   ========================================= */
+header {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    max-width: 130px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    padding: 18px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #333;
+}
+
+/* =========================================
+   3. SECCIÓN SOBRE NOSOTROS
+   ========================================= */
+.about {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    margin: 60px 0; /* Mayor separación con el header */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.about h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #1a1a1a;
+    display: block;
+    margin: 15px auto;
+}
+
+.about p {
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+    font-size: 1.15rem;
+    color: #555;
+}
+
+/* =========================================
+   4. CAJAS DE BENEFICIOS (ICONOS)
+   ========================================= */
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.highlight-box {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.highlight-box:hover {
+    transform: translateY(-8px);
+}
+
+.highlight-box .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.highlight-box .icon img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* =========================================
+   5. PRODUCTOS (SOLUCIÓN ESPACIADO)
+   ========================================= */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px; /* Más espacio entre las tarjetas de productos */
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px; /* Más aire dentro de la tarjeta */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #b12704;
+    margin-top: 15px;
+}
+
+/* =========================================
+   6. CONTACTO (SOLUCIÓN CAJA JUNTA)
+   ========================================= */
+.contact-section {
+    background-color: #ffffff;
+    padding: 60px 40px; /* Espacio interno para que no esté pegado */
+    margin-top: 80px;    /* SEPARACIÓN EXTRA con la sección de productos */
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    border: 1px solid #f0f0f0;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px; /* Más espacio entre campos del formulario */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+.btn-submit {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #444;
+}
+
+/* =========================================
+   7. FOOTER
+   ========================================= */
+.main-footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 60px;
+}
+
+/* =========================================
+   8. RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    section { padding: 40px 0; }
+    .contact-section { padding: 30px 20px; }
+    .navbar ul { flex-direction: column; }
+}

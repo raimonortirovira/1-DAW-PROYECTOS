@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallumbos Ciruelo | Ropa Interior Masculina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="logo_ciruelo.jpg" alt="Logo Gallumbos Ciruelo" class="logo">
+            <h1>Gallumbos Ciruelo</h1>
+            <p class="slogan">Porque lo de dentro también importa.</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <section id="sobre-nosotros" class="about">
+            <h2>Sobre Gallumbos Ciruelo</h2>
+            <p>Somos una brand joven nacida para revolucionar el cajón de la ropa interior. Nos dirigimos al <strong>hombre moderno</strong> que no quiere elegir entre estilo y confort.</p>
+            <p>Nuestra diferencia radica en el uso de fibras naturales y un corte que se adapta a tu ritmo de vida, sin apretar pero manteniendo todo en su sitio.</p>
+        </section>
+
+        <section class="features-container">
+            <div class="highlight-box">
+                <span class="icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="Bandera España" width="50">
+                </span>
+                <h3>Fabricado en España</h3>
+                <p>Producido 100% localmente con <strong>Algodón Orgánico</strong> y diseño de alta resistencia.</p>
+            </div>
+
+            <div class="highlight-box">
+                <span class="icon">
+                    <img src="algodon.jpg" alt="Algodón" width="50">
+                </span>
+                <h3>Algodón 100% Natural</h3>
+                <p>Fibras seleccionadas para una <strong>transpiración total</strong> y suavidad superior en tu piel.</p>
+            </div>
+
+            <div class="highlight-box">
+                <span class="icon">
+                    <img src="diseño_ergonomico.jpg" alt="Diseño" width="50">
+                </span>
+                <h3>Diseño Ergonómico</h3>
+                <p>Corte anatómico que garantiza <strong>sujeción perfecta</strong> sin oprimir ni dejar marcas.</p>
+            </div>
+        </section>
+
+        <section id="productos" class="collection">
+            <h2>Colección Esenciales</h2>
+            <div class="grid-productos">
+                <article class="product-card">
+                    <figure>
+                        <img src="modelo_clasico.jpg" alt="Bóxer Clásico Ciruelo">
+                        <figcaption>Modelo Clásico - Azul Marino</figcaption>
+                    </figure>
+                    <h3>Bóxer "El Patriarca"</h3>
+                    <p>Ajuste perfecto y suavidad extrema para el día a día.</p>
+                    <span class="price">14,95 €</span>
+                </article>
+
+                <article class="product-card">
+                    <figure>
+                        <img src="modelo_deportivo.jpg" alt="Bóxer Deportivo Ciruelo">
+                        <figcaption>Modelo Sport - Gris Vigoré</figcaption>
+                    </figure>
+                    <h3>Bóxer "Ciruelo Sport"</h3>
+                    <p>Transpirable y elástico, ideal para sesiones de gimnasio.</p>
+                    <span class="price">16,50 €</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h2>¿Tienes dudas? Escríbenos</h2>
+            <form action="#" method="post" class="main-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="consulta">Tipo de consulta:</label>
+                    <select id="consulta" name="consulta">
+                        <option value="pedidos">Información de pedidos</option>
+                        <option value="tallas">Guía de tallas</option>
+                        <option value="mayoristas">Venta al por mayor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Gallumbos Ciruelo - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
