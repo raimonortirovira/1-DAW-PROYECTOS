@@ -1,0 +1,324 @@
+/* Variables CSS */
+:root {
+    --color-principal: #1a1a1a;
+    --color-secundario: #333;
+    --color-texto: #333;
+    --color-fondo: #f9f9f9;
+    --color-blanco: #ffffff;
+    --color-precio: #b12704;
+    --espaciado-pequeño: 10px;
+    --espaciado-medio: 20px;
+    --espaciado-grande: 40px;
+}
+
+/* Reset basico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+/* Header */
+header {
+    background-color: var(--color-blanco);
+    padding: var(--espaciado-grande) var(--espaciado-medio);
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.contenedor-header {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: var(--espaciado-medio);
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--espaciado-pequeño);
+}
+
+.eslogan {
+    font-size: 1.1rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Navegacion */
+nav {
+    background-color: var(--color-principal);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: var(--color-blanco);
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--espaciado-medio);
+}
+
+/* Seccion sobre nosotros */
+.seccion-sobre-nosotros {
+    background-color: var(--color-blanco);
+    padding: var(--espaciado-grande);
+    margin: var(--espaciado-grande) 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.seccion-sobre-nosotros h2 {
+    font-size: 2rem;
+    margin-bottom: var(--espaciado-medio);
+    color: var(--color-principal);
+}
+
+.seccion-sobre-nosotros p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Caracteristicas (cajas destacadas) */
+.caracteristicas {
+    display: flex;
+    gap: var(--espaciado-medio);
+    margin: var(--espaciado-grande) 0;
+}
+
+.caja-destaque {
+    background-color: var(--color-blanco);
+    padding: 30px var(--espaciado-medio);
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    flex: 1;
+    /* Modelo de caja visible */
+    margin: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.caja-destaque img {
+    margin-bottom: 15px;
+}
+
+.caja-destaque h3 {
+    font-size: 1.3rem;
+    margin-bottom: var(--espaciado-pequeño);
+    color: var(--color-principal);
+}
+
+.caja-destaque p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Productos */
+.seccion-productos {
+    margin: 60px 0;
+}
+
+.seccion-productos h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--espaciado-grande);
+    color: var(--color-principal);
+}
+
+.contenedor-productos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tarjeta-producto {
+    background-color: var(--color-blanco);
+    border: 1px solid #ddd;
+    padding: var(--espaciado-medio);
+    text-align: center;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-producto figure {
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: var(--espaciado-pequeño);
+}
+
+.tarjeta-producto figcaption {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+}
+
+.tarjeta-producto h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 var(--espaciado-pequeño) 0;
+    color: var(--color-principal);
+}
+
+.tarjeta-producto p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.precio {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-precio);
+    margin-top: var(--espaciado-pequeño);
+}
+
+/* Contacto */
+.seccion-contacto {
+    background-color: var(--color-blanco);
+    padding: var(--espaciado-grande);
+    margin: 60px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--color-principal);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grupo-form {
+    margin-bottom: var(--espaciado-medio);
+}
+
+.grupo-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.grupo-form input,
+.grupo-form select,
+.grupo-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grupo-form input:focus,
+.grupo-form select:focus,
+.grupo-form textarea:focus {
+    outline: none;
+    border-color: var(--color-principal);
+}
+
+button[type="submit"] {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: var(--espaciado-pequeño);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 30px var(--espaciado-medio);
+    margin-top: var(--espaciado-grande);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .caracteristicas {
+        flex-direction: column;
+    }
+    
+    .contenedor-productos {
+        flex-direction: column;
+    }
+    
+    .tarjeta-producto {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
